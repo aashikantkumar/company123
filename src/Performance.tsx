@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Performance = () => {
   return (
     <section className="w-full bg-white py-20 pb-0 flex flex-col items-center">

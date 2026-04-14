@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Hero = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center pt-24 bg-white">

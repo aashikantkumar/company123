@@ -12,3 +12,199 @@
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+
+.featured-media {
+  isolation: isolate;
+}
+
+.featured-image {
+  transition: transform 450ms ease, filter 450ms ease;
+}
+
+.featured-liquid-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 260ms ease;
+  -webkit-mask-image: radial-gradient(
+    circle 240px at var(--mx, 50%) var(--my, 50%),
+    #000 0%,
+    #000 58%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    circle 240px at var(--mx, 50%) var(--my, 50%),
+    #000 0%,
+    #000 58%,
+    transparent 100%
+  );
+}
+
+.featured-liquid-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  will-change: transform, filter;
+}
+
+.featured-liquid-highlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle 190px at var(--mx, 50%) var(--my, 50%),
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.08) 55%,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+.featured-card:hover .featured-image {
+  transform: scale(1.02);
+  filter: brightness(0.95) saturate(1.06);
+}
+
+.featured-card:hover .featured-liquid-layer {
+  opacity: 1;
+}
+
+.featured-card:hover .featured-liquid-image {
+  animation: featured-liquid-drift 1.6s ease-in-out infinite alternate;
+}
+
+.featured-card:hover .featured-liquid-highlight {
+  animation: featured-liquid-pulse 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes featured-liquid-drift {
+  0% {
+    transform: scale(1.06) translate3d(0%, 0%, 0);
+  }
+  35% {
+    transform: scale(1.11) translate3d(-1.1%, 0.7%, 0);
+  }
+  68% {
+    transform: scale(1.07) translate3d(1%, -0.8%, 0);
+  }
+  100% {
+    transform: scale(1.1) translate3d(-0.65%, 0.6%, 0);
+  }
+}
+
+@keyframes featured-liquid-pulse {
+  0% {
+    opacity: 0.68;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.client-reviews-section {
+  background:
+    radial-gradient(
+      1200px 560px at 50% 4%,
+      rgba(255, 255, 255, 0.12),
+      transparent 62%
+    ),
+    radial-gradient(
+      880px 430px at 50% 58%,
+      rgba(239, 47, 23, 0.08),
+      transparent 70%
+    ),
+    #050608;
+}
+
+.client-reviews-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.5;
+}
+
+.client-globe-core {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  width: min(70vw, 760px);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  background:
+    repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 255, 255, 0.16) 0 1px,
+      transparent 1px 13px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.09) 0 1px,
+      transparent 1px 16px
+    ),
+    radial-gradient(
+      circle at 55% 42%,
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.04) 58%,
+      transparent 73%
+    );
+  opacity: 0.3;
+  animation: client-globe-spin 26s linear infinite;
+}
+
+.client-globe-orbit {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  width: min(74vw, 800px);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left-color: rgba(239, 47, 23, 0.95);
+  border-right-color: rgba(239, 47, 23, 0.4);
+  transform: translate(-50%, -50%);
+  opacity: 0.45;
+  animation: client-globe-spin-reverse 18s linear infinite;
+}
+
+.client-globe-orbit--inner {
+  width: min(56vw, 600px);
+  opacity: 0.28;
+  transform: translate(-50%, -50%) scaleY(0.72);
+  animation-duration: 12s;
+}
+
+.client-review-card {
+  transform: translateY(0);
+  animation: client-review-float 5.8s ease-in-out infinite;
+}
+
+@keyframes client-globe-spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes client-globe-spin-reverse {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes client-review-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
