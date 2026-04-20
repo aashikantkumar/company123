@@ -83,7 +83,7 @@ const ServiceItem = ({ service, index }: { service: any; index: number }) => {
               </p>
               
               <div className="mt-8 flex items-center">
-                <a href="#" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-white bg-red-600 hover:bg-red-700 transition font-medium text-sm">
+                <a href="#" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-white bg-gradient-to-r from-[#00c6ff] to-[#8f00ff] hover:from-[#00b4e5] hover:to-[#8000e5] transition font-medium text-sm">
                   Explore Now
                   <span className="flex items-center justify-center p-1 bg-black rounded-full text-white w-6 h-6 shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">

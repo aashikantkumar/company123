@@ -64,7 +64,7 @@ export default function ParallaxDemo() {
 					)}
 				/>
 				<div className="z-10 flex flex-col items-center">
-                    <span className="text-[#DA3535] font-bold tracking-widest text-sm uppercase mb-4">Zoom Into Our World</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#8f00ff] font-bold tracking-widest text-sm uppercase mb-4">Zoom Into Our World</span>
                     <h2 className="text-center text-5xl md:text-7xl font-black text-white uppercase px-4">
                         Discover Brand Magic
                     </h2>

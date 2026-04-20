@@ -1,48 +1,35 @@
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center pt-24 bg-white">
+    <div className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center items-center pt-24 ">
       
       {/* Background Video */}
-      <div className="absolute inset-0 w-full h-full z-0">
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-10"
+          preload="auto"
+          className="w-full h-full object-cover opacity-45"
         >
-          {/* Placeholder video source */}
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
       </div>
 
       {/* Overlay Content */}
       <div className="relative z-10 w-full max-w-[1000px] mx-auto px-4 flex flex-col pt-10">
-        <h1 className="font-black tracking-tight leading-[0.9] flex flex-col">
-          
+        <h1 className="font-black tracking-tight leading-none flex flex-col">
           <div className="flex items-center ml-[5%] md:ml-[10%]">
-            <span className="text-black text-[2.5rem] md:text-[4rem] lg:text-[4.5rem] uppercase">WE ENGINEER</span>
-          </div>
-          
-          <div className="flex items-center ml-[5%] md:ml-[10%] -mt-1 md:-mt-3">
-            <span className="text-[#DA3535] text-[6rem] md:text-[9rem] lg:text-[11rem] uppercase">BRAND</span>
+            <span className="text-black text-[2.5rem] md:text-[4rem] lg:text-[4.5rem]">समय बदल रहा है,</span>
           </div>
 
-          <div className="flex items-baseline ml-[5%] md:ml-[10%] -mt-2 md:-mt-4">
-            <span className="text-[#DA3535] text-[4rem] md:text-[6rem] lg:text-[7rem] uppercase mr-4 lg:mr-6">STRATEGY</span> 
-            <span className="text-black text-[3.5rem] md:text-[5rem] lg:text-[6rem] uppercase">THAT</span>
+          <div className="flex flex-col items-start ml-[5%] md:ml-[10%] mt-1 md:mt-2 leading-[0.95]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#8f00ff] text-[4.8rem] md:text-[7.2rem] lg:text-[8.8rem] font-extrabold">आपकी</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] to-[#8f00ff] text-[4.8rem] md:text-[7.2rem] lg:text-[8.8rem] font-extrabold">मार्केटिंग</span>
           </div>
 
           <div className="flex items-center ml-[12%] md:ml-[25%] mt-1 md:mt-2">
-            <span className="text-black text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] uppercase">ACCELERATE</span>
-          </div>
-
-          <div className="flex items-center ml-[10%] md:ml-[23%] -mt-2 md:-mt-4">
-            <span className="text-[#DA3535] text-[5.5rem] md:text-[8rem] lg:text-[10rem] uppercase">GROWTH,</span>
-          </div>
-
-          <div className="flex items-center ml-[10%] md:ml-[23%] -mt-2 md:-mt-4">
-            <span className="text-black text-[5.5rem] md:text-[8rem] lg:text-[10rem] uppercase">VISIBILITY,</span>
+            <span className="text-black text-[4rem] md:text-[6rem] lg:text-[7rem]">कब बदलेगी?</span>
           </div>
           
         </h1>

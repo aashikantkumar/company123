@@ -59,21 +59,21 @@ const Performance = () => {
           {/* We map twice to create a seamless infinite scroll effect */}
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex gap-8 items-center shrink-0 pr-8">
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">AI-SEO</span>
+              <span className="text-white text-[10px]">●</span>
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">Social Media Marketing</span>
+              <span className="text-white text-[10px]">●</span>
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">Business Growth</span>
+              <span className="text-white text-[10px]">●</span>
               <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">STRATEGY</span>
               <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">COMPETITIVE MAPPING</span>
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">GMB Marketing</span>
               <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">PACKAGING DESIGN</span>
-              <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">BUSINESS GROWTH</span>
-              <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">SOCIAL MEDIA CAMPAIGNS</span>
-              <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">WEBSITE DESIGN</span>
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">PAID ADVERTISING </span>
               <span className="text-white text-[10px]">●</span>
               <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">SEO AGENCY</span>
               <span className="text-white text-[10px]">●</span>
-              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">PAID ADVERTISING</span>
+              <span className="text-white text-sm md:text-base font-bold tracking-widest uppercase">Reddit Marketing</span>
               <span className="text-white text-[10px]">●</span>
             </div>
           ))}
