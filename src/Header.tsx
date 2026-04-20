@@ -1,35 +1,34 @@
+import aiAdsLogo from "./assets/aiads_logo-removebg.png";
+
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="text-3xl font-black tracking-tighter">
-              <span className="text-black">TB</span>
-              <span className="text-red-600">8</span>
-            </div>
-            <div className="text-[10px] font-bold uppercase leading-tight mt-1 tracking-widest text-black flex flex-col hidden sm:block">
-              <span>The Brand</span>
-              <span className="text-red-600">Buzz</span>
-            </div>
-          </div>
+      <div className="flex justify-between items-center py-4">
+        
+        {/* Logo */}
+        <div className="shrink-0 flex items-center">
+          <img
+            src={aiAdsLogo}
+            alt="AI ADS logo"
+            className="h-16 sm:h-20 lg:h-24 w-auto object-contain"
+          />
+        </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-10">
-            <a href="#" className="text-sm font-semibold text-black hover:text-red-600 transition-colors">Home</a>
-            <a href="#" className="text-sm font-semibold text-black hover:text-red-600 transition-colors">About Us</a>
-            <a href="#" className="text-sm font-semibold text-black hover:text-red-600 transition-colors">Our Services</a>
-            <a href="#" className="text-sm font-semibold text-black hover:text-red-600 transition-colors">Blog</a>
-            <a href="#" className="text-sm font-semibold text-black hover:text-red-600 transition-colors">Contact Us</a>
+            <a href="#" className="text-sm font-semibold text-black hover:text-blue-600 transition-colors">Home</a>
+            <a href="#" className="text-sm font-semibold text-black hover:text-blue-600 transition-colors">About Us</a>
+            <a href="#" className="text-sm font-semibold text-black hover:text-blue-600 transition-colors">Our Services</a>
+            <a href="#" className="text-sm font-semibold text-black hover:text-blue-600 transition-colors">Blog</a>
+            <a href="#" className="text-sm font-semibold text-black hover:text-blue-600 transition-colors">Contact Us</a>
           </nav>
 
           {/* CTA Button */}
           <div className="flex items-center">
             <a
               href="#"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-white bg-red-600 hover:bg-red-700 transition font-medium text-sm"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-white bg-gradient-to-r from-[#00c6ff] to-[#8f00ff] hover:from-[#00b4e5] hover:to-[#8000e5] transition font-medium text-sm"
             >
               Start a Project
               <span className="flex items-center justify-center p-1 bg-black rounded-full text-white w-6 h-6 shrink-0">

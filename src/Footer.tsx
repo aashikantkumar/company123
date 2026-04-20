@@ -80,16 +80,17 @@ export default function Footer() {
             </p>
 
             <div className="space-y-4 text-3xl font-medium leading-[1.35] text-[#2a2d34] md:text-[2rem] lg:text-[2.2rem]">
-              <p>Connect@brandbugzz.com</p>
+              <p>aiads.digital@gmail.com</p>
               <p>+91 99309 35549</p>
               <p>
-                Office No 401/402, Tiwari Apartment,
+                3C Rafiganj | 2nd flor Amazon Office | 
                 <br />
-                Gantalidevi Mandir Road, opp. Teen Petrol
+                opp SSY College | Aurangabad 
                 <br />
-                Pump, RBI Colony, Naupada, Thane West
+               Pin Code- 824125
+
                 <br />
-                400602
+                Bihar, India
               </p>
             </div>
           </div>
@@ -98,9 +99,9 @@ export default function Footer() {
         <div className="relative mt-16 overflow-hidden pt-4">
           <h3 className="text-[3.1rem] font-black uppercase leading-none tracking-tight text-[#0d0f14] sm:text-[4.5rem] md:text-[6.2rem] lg:text-[9.4rem]">
             BRAND
-            <span className="ml-3 text-[#ef2f17]">BU</span>
-            <span className="text-[#e19aa1]">G</span>
-            <span className="text-[#ef2f17]">ZZ</span>
+            <span className="ml-3 text-[#ef2f17]">AI</span>
+            <span className="text-[#e19aa1]">A</span>
+            <span className="text-[#ef2f17]">DS</span>
           </h3>
 
           <div className="absolute left-[72%] top-0 hidden items-center gap-2 rounded-full bg-transparent text-xl md:flex">
@@ -111,9 +112,9 @@ export default function Footer() {
 
         <p className="pb-6 pt-4 text-center text-2xl font-medium text-[#3d4047] md:text-3xl">
           ©2025 THE BRAND
-          <span className="text-[#ef2f17]"> BU</span>
-          <span className="text-[#e19aa1]">G</span>
-          <span className="text-[#ef2f17]">ZZ.</span>
+          <span className="text-[#ef2f17]"> AI</span>
+          <span className="text-[#e19aa1]">A</span>
+          <span className="text-[#ef2f17]">DS .</span>
         </p>
       </div>
     </footer>
